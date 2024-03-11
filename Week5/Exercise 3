@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create product list with CSS3</title>
+<style type="text/css">
+            .StudentDetails {display: none;}
+            .Student img {
+                 width: 150px;
+                 height: 150px;
+                 border-radius: 20px;
+                 box-shadow: 5px 5px 10px #aaa;
+            }
+            .StudentName { font-weight: bold;}
+            .StudentCode { font-style: normal }
+            .Student{
+                text-align: center;
+                width: 150px;
+                margin: 0px 20px;
+                float: left;
+                cursor: pointer;
+             }
+            .Student:hover .StudentDetails { display: block;}
+
+</style>     
+</head>
+<body>
+    <div class="Student">
+        <img src="https://i.pinimg.com/474x/3b/aa/61/3baa61b5c4d2d87cf08657f553527c4f.jpg"/>
+        <div class="StudentDetails">
+            <span class="StudentName">Nguyễn Thị An</span>
+            <span class="StudentCode">23070011</span>
+        </div>
+    </div>
+    <div class="Student">
+        <img src="https://png.pngtree.com/png-clipart/20190706/original/pngtree-cute-schoolboy-cartoon-image-png-image_4372049.jpg"/>
+        <div class="StudentDetails">
+            <span class="StudentName">Vũ Thị Linh</span>
+            <span class="StudentCode">23070083</span>
+        </div>
+    </div>
+    <div class="Student">
+        <img src="https://img.lovepik.com/free_png/33/54/06/38z58PICdamjTjBA39778_PIC2018.png_860.png"/>
+        <div class="StudentDetails">
+            <span class="StudentName">Hoàng Văn Bách</span>
+            <span class="StudentCode">23070099</span>
+        </div>
+    </div>
+</body>
+</html>
