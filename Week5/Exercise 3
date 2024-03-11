@@ -13,6 +13,7 @@
             }
             .StudentName { font-weight: bold;}
             .StudentCode { font-style: normal }
+            .StudentCode:before { content: "-";}
             .Student{
                 text-align: center;
                 width: 150px;
