@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script language="javascrip">
+    </script>
+</head>
+<body>
+    <input type="number" id="txta"> 
+    <input type="number" id="txtb">
+    <button onclick="tinhtong();">
+   Tinh tong
+    </button>
+    <label id="ketqua">
+        Ket qua: <span id="tong"></span>
+    </label>
+</body>
+<script>
+    function tinhtong(){
+        var a = document.getElementById("txta").value;
+        var b = document.getElementById("txtb").value;
+        var tong=parseInt(a) + parseInt(b);
+        document.getElementById("txta").value='';
+        document.getElementById("txtb").value='';
+        document.getElementById("tong").innerHTML=tong;
+        // alert(tong);
+    }
+</script> 
+</html>
