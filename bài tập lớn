@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website quản lý sự kiện</title>  
+  <style type="text/css">
+    body {
+      background-color: #f1f1f1;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <h2>Tạo Sự Kiện Mới</h2>
+    
+    <form id="eventForm">
+      <label for="eventName">Tên Sự Kiện:</label><br>
+      <input type="text" id="eventName" name="eventName"><br><br>
+      <label for="eventDate">Ngày Sự Kiện:</label><br>
+      <input type="date" id="eventDate" name="eventDate"><br><br>
+      <label for="eventLocation">Địa Điểm:</label><br>
+      <input type="text" id="eventLocation" name="eventLocation"><br><br>
+      <label for="eventmethod">Phương thức diễn ra:</label><br>
+      <select id="eventmethod" name="eventmethod">
+        <option value="online">Trực tuyến</option>
+        <option value="offline">Trực tiếp</option>       
+      </select><br><br>
+      <label for="eventguest">Đối tượng tham gia:</label><br>
+      <input type="text" id="eventguest" name="eventguest"><br><br>
+     <input type="submit" value="Tạo Sự Kiện">
+    </form>
+    
+    <script>
+    document.getElementById("eventForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      var eventName = document.getElementById("eventName").value;
+      var eventDate = document.getElementById("eventDate").value;
+      var eventLocation = document.getElementById("eventLocation").value;
+      var eventmethod = document.getElementById("eventmethod").value;
+      var eventguest = document.getElementById("eventguest").value;
+      document.getElemfentById("eventForm").reset();
+    });
+    </script>
+    
+    </body>
+    </html>
+    
+</body>
